@@ -1,0 +1,17 @@
+consultas = [
+    {"id": 1,  "id_paciente": 1,  "medico": "Dr. Roberto",  "especialidade": "Cardiologia",  "valor": 350.0, "status": "realizada", "data": "2026-01-05"},
+    {"id": 2,  "id_paciente": 2,  "medico": "Dra. Fernanda", "especialidade": "Ortopedia",    "valor": 280.0, "status": "realizada", "data": "2026-01-06"},
+    {"id": 3,  "id_paciente": 3,  "medico": "Dr. Roberto",  "especialidade": "Cardiologia",  "valor": 350.0, "status": "cancelada", "data": "2026-01-07"},
+    {"id": 4,  "id_paciente": 4,  "medico": "Dra. Patricia","especialidade": "Neurologia",    "valor": 420.0, "status": "realizada", "data": "2026-01-08"},
+    {"id": 5,  "id_paciente": 5,  "medico": "Dra. Fernanda", "especialidade": "Ortopedia",    "valor": 280.0, "status": "realizada", "data": "2026-01-09"},
+    {"id": 6,  "id_paciente": 6,  "medico": "Dra. Patricia","especialidade": "Neurologia",    "valor": 420.0, "status": "realizada", "data": "2026-01-10"},
+    {"id": 7,  "id_paciente": 7,  "medico": "Dr. Roberto",  "especialidade": "Cardiologia",  "valor": 350.0, "status": "realizada", "data": "2026-01-11"},
+    {"id": 8,  "id_paciente": 8,  "medico": "Dr. Marcus",   "especialidade": "Pediatria",     "valor": 200.0, "status": "cancelada", "data": "2026-01-12"},
+    {"id": 9,  "id_paciente": 9,  "medico": "Dra. Patricia","especialidade": "Neurologia",    "valor": 420.0, "status": "realizada", "data": "2026-01-13"},
+    {"id": 10, "id_paciente": 10, "medico": "Dr. Marcus",   "especialidade": "Pediatria",     "valor": 200.0, "status": "realizada", "data": "2026-01-14"},
+    {"id": 11, "id_paciente": 1,  "medico": "Dra. Fernanda", "especialidade": "Ortopedia",    "valor": 280.0, "status": "realizada", "data": "2026-01-15"},
+    {"id": 12, "id_paciente": 3,  "medico": "Dr. Marcus",   "especialidade": "Pediatria",     "valor": 200.0, "status": "realizada", "data": "2026-01-16"},
+    {"id": 13, "id_paciente": 5,  "medico": "Dra. Patricia","especialidade": "Neurologia",    "valor": 420.0, "status": "cancelada", "data": "2026-01-17"},
+    {"id": 14, "id_paciente": 7,  "medico": "Dr. Roberto",  "especialidade": "Cardiologia",  "valor": 350.0, "status": "realizada", "data": "2026-01-18"},
+    {"id": 15, "id_paciente": 9,  "medico": "Dra. Fernanda", "especialidade": "Ortopedia",    "valor": 280.0, "status": "realizada", "data": "2026-01-19"},
+]
