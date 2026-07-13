@@ -144,3 +144,35 @@ JOIN pacientes AS P ON C.id_paciente = P.id
 WHERE P.plano = 'premium'
 GROUP BY P.nome, C.especialidade
 ORDER BY quantidade_consulta DESC;
+
+
+-- Quero saber qual médico teve mais
+-- consultas canceladas, mostrando o nome 
+-- do médico e a quantidade.
+
+
+SELECT
+    medico,
+    COUNT(id_paciente) AS quantidade_consulta
+FROM consultas
+WHERE status = 'cancelada'
+GROUP BY medico
+ORDER BY quantidade_consulta DESC;
+
+
+-- Quero ver o nome do paciente, a cidade, o médico e o valor, 
+-- apenas de pacientes com mais de 40 anos que tiveram consultas 
+-- realizadas,  ordenado pela idade do mais velho para o mais novo.
+
+SELECT 
+     C.medico AS nome_medico,
+     C.valor AS valor_total,
+     P.nome AS nome_paciente,
+     P.cidade AS cidade_paciente
+FROM 
+    consultas as C 
+JOIN  
+    pacientes as P  ON  C.id_paciente  = P.id 
+WHERE 
+     P.idade > 40 AND C.status = 'realizada'
+ORDER BY P.idade DESC;
