@@ -176,3 +176,15 @@ JOIN
 WHERE 
      P.idade > 40 AND C.status = 'realizada'
 ORDER BY P.idade DESC;
+
+-- Quero saber qual cidade tem mais pacientes com
+--  plano premium, mostrando a cidade e a quantidade.
+
+SELECT
+    P.cidade            AS cidade_paciente,
+    COUNT(C.id_paciente) AS quantidade_pacientes
+FROM consultas AS C
+JOIN pacientes AS P ON C.id_paciente = P.id
+WHERE P.plano = 'premium'
+GROUP BY cidade_paciente
+ORDER BY quantidade_pacientes DESC;
